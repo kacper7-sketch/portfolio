@@ -1,0 +1,159 @@
+
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Portfolio twórcy stron internetowych. Projekty HTML, CSS i JavaScript, w tym AutoPro Serwis.">
+    <meta name="theme-color" content="#090d1a">
+    <title>Moje Portfolio | Web Developer</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+
+    <header class="navbar">
+        <a href="#start" class="logo">DEV<span>.</span></a>
+
+        <nav aria-label="Nawigacja główna">
+            <a href="#start">Start</a>
+            <a href="#omnie">O mnie</a>
+            <a href="#projekty">Projekty</a>
+            <a href="#kontakt">Kontakt</a>
+        </nav>
+    </header>
+
+    <main>
+
+        <section id="start" class="hero">
+            <div class="hero-content">
+                <p class="hello">CZEŚĆ, MIŁO CIĘ WIDZIEĆ 👋</p>
+
+                <h1>Tworzę nowoczesne
+                    <span>strony internetowe.</span>
+                </h1>
+
+                <p class="hero-description">
+                    Projektuję i buduję responsywne strony,
+                    które dobrze wyglądają na komputerach
+                    i telefonach.
+                </p>
+
+                <div class="hero-buttons">
+                    <a href="#projekty" class="btn primary">
+                        Zobacz projekty
+                    </a>
+
+                    <a href="#kontakt" class="btn secondary">
+                        Kontakt
+                    </a>
+                </div>
+            </div>
+
+            <div class="hero-decoration">
+                &lt;/&gt;
+            </div>
+        </section>
+
+        <section id="omnie" class="section">
+            <p class="section-label">KILKA SŁÓW O MNIE</p>
+            <h2>O mnie</h2>
+
+            <p class="about-text">
+                Rozwijam swoje umiejętności w tworzeniu
+                stron internetowych. Lubię nowoczesny
+                design, przejrzysty kod i rozwiązania,
+                które są wygodne dla użytkowników.
+            </p>
+
+            <div class="skills">
+                <span>HTML5</span>
+                <span>CSS3</span>
+                <span>JavaScript</span>
+                <span>Responsive Design</span>
+            </div>
+        </section>
+
+        <section id="projekty" class="section">
+            <p class="section-label">MOJE REALIZACJE</p>
+            <h2>Wybrane projekty</h2>
+
+            <div class="projects-grid">
+                <article class="project-card">
+                    <div class="project-image">
+                        <img src="autopro.png"
+                             alt="Podgląd strony AutoPro Serwis"
+                             loading="lazy"
+                             width="1200"
+                             height="675">
+                    </div>
+
+                    <div class="project-content">
+                        <p class="project-type">STRONA DEMONSTRACYJNA</p>
+
+                        <h3>AutoPro Serwis</h3>
+
+                        <p>
+                            Responsywna strona warsztatu
+                            samochodowego z cennikiem,
+                            animacjami i formularzem.
+                        </p>
+
+                        <div class="project-tags">
+                            <span>HTML</span>
+                            <span>CSS</span>
+                            <span>JavaScript</span>
+                        </div>
+
+                        <a
+                            href="https://kacper7-sketch.github.io/autopro/"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            class="project-link"
+                        >
+                            Zobacz stronę ↗
+                        </a>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+
+        <section id="kontakt" class="section contact">
+            <p class="section-label">POROZMAWIAJMY</p>
+            <h2>Masz pomysł na stronę?</h2>
+            <p>Opisz swój pomysł, a odezwę się do Ciebie.</p>
+
+            <form id="formularz-kontaktowy"
+                  class="contact-form"
+                  action="https://formspree.io/f/mppqbgje"
+                  method="POST">
+                <label for="imie">Imię</label>
+                <input type="text" id="imie" name="name"
+                       placeholder="Twoje imię" autocomplete="given-name" required>
+
+                <label for="email">Adres e-mail</label>
+                <input type="email" id="email" name="email"
+                       placeholder="twoj@email.pl" autocomplete="email" required>
+
+                <label for="wiadomosc">Wiadomość</label>
+                <textarea id="wiadomosc" name="message" rows="5"
+                          placeholder="Opisz swój projekt..." required></textarea>
+
+                <button type="submit" class="btn primary">Wyślij wiadomość</button>
+                <p class="privacy-note">
+                    Dane z formularza zostaną wykorzystane do odpowiedzi na wiadomość.
+                    Wiadomość jest przesyłana przez Formspree.
+                </p>
+            </form>
+            <p id="status-formularza" role="status" aria-live="polite"></p>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>© 2026 Moje Portfolio. Projekt autorski.</p>
+    </footer>
+
+</body>
+</html>
