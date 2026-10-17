@@ -507,4 +507,16 @@ footer a {
 .privacy-note a {
     color: #a78bfa !important;
     text-decoration: underline;
+}/* Link do polityki prywatności */
+
+.privacy-note a,
+.privacy-note a:visited {
+    color: #a78bfa !important;
+    text-decoration: underline !important;
+    font-weight: 600;
+    transition: color 0.2s ease;
+}
+
+.privacy-note a:hover {
+    color: #ffffff !important;
 }
